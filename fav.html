@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+        <!-- Color theme for statusbar (Android only) -->
+        <meta name="theme-color" content="#2196f3">
+        <!-- Your app title -->
+        <title>My App</title>
+        <!-- Path to Framework7 Library Bundle CSS -->
+        <link rel="stylesheet" href="lib/framework7-bundle.min.css">
+        <!-- CSS PERSONALIZADO PARA MENU-->
+        <link rel="stylesheet" href="css/fav.css">
+        <!--Ícones Material Design-->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+    <body>
+        <!-- App root element -->
+        <div id="app">
+            <!-- Your main view, should have "view-main" class -->
+            <div class="view view-main">
+                <!-- Initial Page, "data-name" contains page name -->
+                <div data-name="fav" class="page">
+                <!-- Top Navbar -->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left">
+            <a href="/index/" class="link">
+                <span class="material-symbols-outlined">arrow_circle_left</span>
+            </a>
+        </div>
+        <div class="title">Favoritos</div>
+    </div>
+</div>
+                    <!-- Scrollable page content -->
+<div class="page-content">
+  <div class="block">
+
+    <div class="list media-list favoritos-list">
+      <ul>
+        <!-- Card 1 -->
+        <li class="item-content favorito-card">
+          <div class="item-media">
+            <img src="img/1762881296297.jpg" alt="Salada de Quinoa" class="favorito-img" />
+          </div>
+          <div class="item-inner">
+            <div class="item-header">
+              <div class="item-subtitle tempo">30 min</div>
+              <button class="btn-favorito">
+                <span class="material-symbols-outlined">favorite</span>
+              </button>
+            </div>
+            <div class="item-title titulo">Salada de Quinoa com Frango Grelhado</div>
+            <div class="item-text descricao">
+              Uma salada nutritiva e saborosa, perfeita para um almoço leve ou jantar.
+            </div>
+          </div>
+        </li>
+
+        <!-- Card 2 -->
+        <li class="item-content favorito-card">
+          <div class="item-media">
+            <img src="img/1762881351184.jpg" alt="Sopa de Lentilha" class="favorito-img" />
+          </div>
+          <div class="item-inner">
+            <div class="item-header">
+              <div class="item-subtitle tempo">45 min</div>
+              <button class="btn-favorito">
+                <span class="material-symbols-outlined">favorite</span>
+              </button>
+            </div>
+            <div class="item-title titulo">Sopa de Lentilha com Legumes</div>
+            <div class="item-text descricao">
+              Uma sopa reconfortante e rica em nutrientes, ideal para dias mais frios.
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+            </div>
+        </div>
+    </div>
+    <!-- Path to Framework7 Library Bundle JS-->
+    <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>
+    <!-- Roteamento do app-->
+    <script type="text/javascript" src="js/routes.js"></script>
+</body>
+</html>

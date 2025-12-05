@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <!-- Color theme for statusbar (Android only) -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>Receitas</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="lib/framework7-bundle.min.css">
+    <!-- CSS PERSONALIZADO PARA MENU-->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/descricao.css">
+    <link rel="stylesheet" href="css/duvidas.css">
+    <link rel="stylesheet" href="css/ferramentas.css">
+    <link rel="stylesheet" href="css/fav.css">
+    <!--Ícones Material Design-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+    <!-- App root element -->
+    <div id="app">
+
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+
+            <!-- TAB BAR-->
+            <div id="menuPrincipal" class="toolbar toolbar-bottom">
+                <div class="toolbar-inner display-flex">
+                    <a href="/index/" class="tab-link link active">
+                      <i class="material-symbols-outlined">menu_book_2</i>
+                        <span>Receitas</span>
+                    </a>
+
+                    <a href="/duvidas/" class="tab-link link">
+                        <i class="material-symbols-outlined">face_4</i>
+                        <span>Dúvidas</span>
+                    </a>
+                    <a href="/fav/" class="tab-link link">
+                        <i class="material-symbols-outlined">bookmark_heart</i>
+                        <span>Favoritos</span>
+                    </a>
+                    <a href="/ferramentas/" class="tab-link link">
+                        <i class="material-symbols-outlined">health_metrics</i>
+                        <span>Informações</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="index" class="page color-theme-blue">
+
+                <!-- Top Navbar -->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="title">Receitas</div> 
+    </div>
+</div>
+
+                <!-- Scrollable page content -->
+<div class="page-content">
+  <div class="block">
+        <!-- Campo de busca -->
+    <div class="search-bar">
+      <i class="material-symbols-outlined">search</i>
+      <input type="text" id="searchReceitas" placeholder="Buscar receitas">
+    </div>
+    
+     <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="img-fluid" src="img/01.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img class="img-fluid" src="img/02.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img class="img-fluid" src="img/03.jpg">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+<!-- Swiper botões de categorias -->
+    <div class="swiper categorias">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <button class="filter-btn active">Todas</button>
+            </div>
+            <div class="swiper-slide">
+                <button class="filter-btn">Almoço</button>
+            </div>
+            <div class="swiper-slide">
+                <button class="filter-btn">Café da manhã</button>
+            </div>
+            <div class="swiper-slide">
+                <button class="filter-btn">Detox</button>
+            </div>
+            <div class="swiper-slide">
+                <button class="filter-btn">Janta</button>
+            </div>
+            <div class="swiper-slide">
+                <button class="filter-btn">Lanche</button>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Lista de receitas -->
+    <div class="list media-list receitas-list">
+      <ul>
+        <!-- Receita 1 -->
+        <a href="/descricao/">
+        <li class="item-content receita-card" data-category="saladas">
+          <div class="item-media">
+            <img src="img/1762880823908.jpg" alt="Salada de Quinoa com Legumes" />
+          </div>
+          <div class="item-inner">
+            <div class="item-subtitle tempo">30 min</div>
+            <div class="item-title titulo">Salada de Quinoa com Legumes</div>
+            <div class="item-text descricao">
+              Saudável, refrescante e nutritiva
+            </div>
+          </div>
+        </li>
+        </a>
+        
+        <!-- Receita 2 -->
+        <a href="/descricao/">
+        <li class="item-content receita-card" data-category="sopas">
+          <div class="item-media">
+            <img src="img/1762880832242.jpg" alt="Sopa Cremosa de Abóbora" />
+          </div>
+          <div class="item-inner">
+            <div class="item-subtitle tempo">45 min</div>
+            <div class="item-title titulo">Sopa de Abóbora com Gengibre</div>
+            <div class="item-text descricao">
+              Reconfortante, cremosa e saborosa
+            </div>
+          </div>
+        </li>
+        </a>
+
+        <!-- Receita 3 -->
+        <a href="/descricao/">
+        <li class="item-content receita-card" data-category="bebidas">
+          <div class="item-media">
+            <img src="img/1762880838492.jpg" alt="Smoothie Energético" />
+          </div>
+          <div class="item-inner">
+            <div class="item-subtitle tempo">20 min</div>
+            <div class="item-title titulo">Smoothie de Frutas Vermelhas</div>
+            <div class="item-text descricao">
+              Energético, vitamínico e delicioso
+            </div>
+          </div>
+        </li>
+        </a>
+
+        <!-- Receita 4 -->
+        <a href="/descricao/">
+        <li class="item-content receita-card" data-category="tortas">
+          <div class="item-media">
+            <img src="img/1762880843930.jpg" alt="Torta de Frango com Massa Integral" />
+          </div>
+          <div class="item-inner">
+            <div class="item-subtitle tempo">1 hora</div>
+            <div class="item-title titulo">Torta de Frango Integral</div>
+            <div class="item-text descricao">
+              Saborosa, nutritiva e caseira
+            </div>
+          </div>
+        </li>
+        </a>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Logo centralizada -->
+  <div class="logo-container">
+    <img src="img/logo.svg" alt="Logo" class="logo-img">
+  </div>
+</div>
+
+    <!-- Path to Framework7 Library Bundle JS-->
+    <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+	<!-- jQuery -->
+	<script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>	
+    <!-- Roteamento do app-->
+    <script type="text/javascript" src="js/routes.js"></script>
+</body>
+</html>

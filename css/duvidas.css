@@ -1,0 +1,122 @@
+
+
+/* Container central */
+.duvidas-container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Imagem principal */
+.foto-nutricionista {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 20px 0;
+}
+
+/* Nome */
+.nome {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1c1c1c;
+  margin-bottom: 8px;
+}
+
+/* Especialidade */
+.especialidade {
+  color: #4c9a4c;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.especialidade span {
+  display: block;
+  font-weight: 500;
+  color: #3c613c;
+}
+
+/* Descrição */
+.descricao {
+  text-align: justify;
+  color: #333;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.6em;
+  margin: 0 10px 30px;
+  text-indent: 3em;
+}
+
+
+#btnWhatsApp {
+    position: fixed;
+    width: 64px;
+    height: 64px;
+    bottom: 212px;
+    right: 24px;
+    background: none;
+    border: 0px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    /* Efeito de pulsar suave e automático */
+    animation: pulse 2s infinite ease-in-out;
+}
+
+#btnWhatsApp:hover {
+    transform: scale(1.25);
+    animation: none; /* Para a animação ao passar o mouse */
+}
+
+/* Animação de pulsar */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Ícone */
+#btnWhatsApp img {
+    width: 42px;
+    height: 42px;
+}
+
+
+#btnInstagram {
+    position: fixed;
+    width: 64px;
+    height: 64px;
+    bottom: 128px;
+    right: 24px;
+    background: none;
+    border: 0px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    /* Efeito de pulsar suave e automático */
+    animation: pulse 2s infinite ease-in-out;
+}
+
+#btnInstagram:hover {
+    transform: scale(1.25);
+    animation: none; /* Para a animação ao passar o mouse */
+}
+
+#btnInstagram img {
+    width: 42px;
+    height: 42px;
+}

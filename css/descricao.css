@@ -1,0 +1,87 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: white;
+}
+
+/* Container principal */
+.descricao-container {
+  padding: 20px;
+}
+
+/* Imagem */
+.imagem-receita {
+  width: 100%;
+  border-radius: 12px;
+  margin: 15px 0;
+  object-fit: cover;
+}
+
+/* Título */
+.titulo {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1c1c1c;
+}
+
+/* Descrição */
+.texto {
+  color: #444;
+  font-size: 15px;
+  line-height: 1.5em;
+  margin-bottom: 20px;
+}
+
+/* Informações */
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  padding: 0 5px;
+}
+
+.info-label {
+  color: #6a9a6a;
+  font-size: 14px;
+}
+
+.info-valor {
+  color: #1c1c1c;
+  font-weight: 500;
+}
+
+/* Subtítulo */
+.subtitulo {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #1c1c1c;
+}
+
+/* Ingredientes */
+.ingredientes-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ingredientes-lista li {
+  display: flex;
+  align-items: center;
+  background: #f8f8f8;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #333;
+}
+
+.ingredientes-lista input[type="checkbox"] {
+  margin-right: 10px;
+  accent-color: #4c9a4c;
+}
+

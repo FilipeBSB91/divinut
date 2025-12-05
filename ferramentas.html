@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="theme-color" content="#2196f3">
+    <title>My App</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="lib/framework7-bundle.min.css">
+    <link rel="stylesheet" href="css/ferramentas.css">
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="view view-main">
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="ferramentas" class="page">
+                <!-- Top Navbar -->
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="left">
+                            <a href="/index/" class="link">
+                                <span class="material-symbols-outlined">arrow_circle_left</span>
+                            </a>
+                        </div>
+                        <div class="title">Informações</div>
+                    </div>
+                </div>
+
+                <div class="page-content">
+                    <!-- Seção de Artigos -->
+                    <div class="block">
+                        
+                        <!-- Card de Artigo 1 -->
+                        <div class="card artigo-card">
+                            <div class="card-content card-content-padding">
+                                <div class="artigo-header">
+                                    <img src="img/01.jpg" alt="Imagem do Artigo" class="artigo-imagem">
+                                    <h3 class="artigo-titulo">A importância da hidratação</h3>
+                                </div>
+                                <div class="artigo-texto">
+                                    <p>A hidratação é crucial porque a água transporta nutrientes, regula a temperatura corporal, lubrifica articulações, auxilia na digestão e eliminação de toxinas, sendo vital para o funcionamento de órgãos como rins e cérebro, prevenindo problemas como pedras nos rins e fadiga, e mantendo a pele e músculos saudáveis.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card de Artigo 2 -->
+                        <div class="card artigo-card">
+                            <div class="card-content card-content-padding">
+                                <div class="artigo-header">
+                                    <img src="img/02.jpg" alt="Imagem do Artigo" class="artigo-imagem">
+                                    <h3 class="artigo-titulo">Consumo de vegetais</h3>
+                                </div>
+                                <div class="artigo-texto">
+                                    <p>O consumo de vegetais é fundamental porque eles fornecem vitaminas, minerais, fibras e antioxidantes essenciais para o bom funcionamento do corpo, fortalecendo a imunidade, prevenindo doenças crônicas como câncer e problemas cardíacos, melhorando a saúde digestiva, auxiliando no controle do peso e promovendo o bem-estar mental</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Mais artigos podem ser adicionados aqui -->
+                    </div>
+                    
+                    <!-- Botão flutuante para Calculadora de IMC -->
+                    <button id="btnImc">
+                        <img src="img/calculator.svg" alt="Calculadora de IMC">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+    <script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>
+    <script type="text/javascript" src="js/ferramentas.js"></script>
+    <script type="text/javascript" src="js/routes.js"></script>
+</body>
+</html>

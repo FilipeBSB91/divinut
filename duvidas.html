@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <!-- Color theme for statusbar (Android only) -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>My App</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="lib/framework7-bundle.min.css">
+    <!-- CSS PERSONALIZADO PARA MENU-->
+    <link rel="stylesheet" href="css/duvidas.css">
+    <!--Ícones Material Design-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+
+</head>
+
+<body>
+    <!-- App root element -->
+    <div id="app">
+
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="duvidas" class="page">
+
+                <!-- Top Navbar -->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left">
+            <a href="/index/" class="link">
+                <span class="material-symbols-outlined">arrow_circle_left</span>
+            </a>
+        </div>
+        <div class="title">Dúvidas</div>
+    </div>
+</div>
+
+                <!-- Scrollable page content -->
+                <div class="page-content">
+                    <div class="block text-align-center duvidas-container">
+
+                        <!-- Imagem da nutricionista -->
+                        <img src="img/avatar.png" alt="Nutricionista" class="foto-nutricionista">
+
+                        <!-- Nome e especialidade -->
+                        <h2 class="nome">Divina Torres</h2>
+                        <p class="especialidade">
+                            Especialista em nutrição orgânica e bem-estar<br>
+                            <span>Nutricionista</span>
+                        </p>
+
+                        <!-- Descrição -->
+                        <p class="descricao">
+                            <strong>Divina Torres</strong> é uma nutricionista apaixonada por promover hábitos alimentares saudáveis e sustentáveis. 
+                            Com anos de experiência, ela se dedica a ajudar seus pacientes a alcançar o bem-estar através de uma alimentação equilibrada e consciente. 
+                            Sua abordagem técnica considera não apenas a nutrição, mas também o estilo de vida e as necessidades individuais de cada pessoa.
+                        </p>
+
+                        <!-- Ícones de contato -->
+                        <button id="btnWhatsApp" target="_blank">
+                            <img src="img/whatsapp.svg" alt="WhatsApp">
+                        </button>
+                        
+                        <button id="btnInstagram" target="_blank">
+                            <img src="img/instagram.svg" alt="Instagram">
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- Path to Framework7 Library Bundle JS-->
+    <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>	
+    <!-- Roteamento do app-->
+    <script type="text/javascript" src="js/routes.js"></script>
+    <script src="js/duvidas.js"></script>
+</body>
+
+</html>
