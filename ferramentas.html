@@ -15,7 +15,6 @@
 <body>
     <div id="app">
         <div class="view view-main">
-            <!-- Initial Page, "data-name" contains page name -->
             <div data-name="ferramentas" class="page">
                 <!-- Top Navbar -->
                 <div class="navbar">
@@ -30,36 +29,9 @@
                 </div>
 
                 <div class="page-content">
-                    <!-- Seção de Artigos -->
-                    <div class="block">
-                        
-                        <!-- Card de Artigo 1 -->
-                        <div class="card artigo-card">
-                            <div class="card-content card-content-padding">
-                                <div class="artigo-header">
-                                    <img src="img/01.jpg" alt="Imagem do Artigo" class="artigo-imagem">
-                                    <h3 class="artigo-titulo">A importância da hidratação</h3>
-                                </div>
-                                <div class="artigo-texto">
-                                    <p>A hidratação é crucial porque a água transporta nutrientes, regula a temperatura corporal, lubrifica articulações, auxilia na digestão e eliminação de toxinas, sendo vital para o funcionamento de órgãos como rins e cérebro, prevenindo problemas como pedras nos rins e fadiga, e mantendo a pele e músculos saudáveis.</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Card de Artigo 2 -->
-                        <div class="card artigo-card">
-                            <div class="card-content card-content-padding">
-                                <div class="artigo-header">
-                                    <img src="img/02.jpg" alt="Imagem do Artigo" class="artigo-imagem">
-                                    <h3 class="artigo-titulo">Consumo de vegetais</h3>
-                                </div>
-                                <div class="artigo-texto">
-                                    <p>O consumo de vegetais é fundamental porque eles fornecem vitaminas, minerais, fibras e antioxidantes essenciais para o bom funcionamento do corpo, fortalecendo a imunidade, prevenindo doenças crônicas como câncer e problemas cardíacos, melhorando a saúde digestiva, auxiliando no controle do peso e promovendo o bem-estar mental</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Mais artigos podem ser adicionados aqui -->
+
+                    <div class="block" id="artigos-container">
+
                     </div>
                     
                     <!-- Botão flutuante para Calculadora de IMC -->
@@ -71,10 +43,13 @@
         </div>
     </div>
 
-    <!-- Scripts -->
+    <!-- Framework7 e jQuery -->
     <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
     <script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>
-    <script type="text/javascript" src="js/ferramentas.js"></script>
     <script type="text/javascript" src="js/routes.js"></script>
+    
+    <!-- Script principal -->
+    <script type="text/javascript" src="js/ferramentas.js"></script>
+
 </body>
 </html>

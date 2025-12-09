@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+        <!-- Color theme for statusbar (Android only) -->
+        <meta name="theme-color" content="#2196f3">
+        <!-- Your app title -->
+        <title>My App</title>
+        <!-- Path to Framework7 Library Bundle CSS -->
+        <!--<link rel="stylesheet" href="lib/framework7-bundle.min.css">-->
+        <!-- CSS PERSONALIZADO PARA MENU-->
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/painel.css">
+        <!--Ícones Material Design-->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+    <body>
+        <!-- App root element -->
+        <div id="app">
+            <!-- Your main view, should have "view-main" class -->
+            <div class="view view-main">
+                <!-- Initial Page, "data-name" contains page name -->
+                <div data-name="painel" class="page">
+                <!-- Top Navbar -->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left">
+            <a href="./login.html" class="link">
+                <span class="material-symbols-outlined" style="font-size: 36px; padding: 10px 10px 10px 10px;">arrow_circle_left</span>
+            </a>
+        </div>
+        <div class="title">Painel de usuário</div>
+    </div>
+</div>
+                    <!-- Scrollable page content -->
+<div class="page-content painel-page">
+  <!-- Div de informações de receitas ativas -->
+  <div class="anuncios-info">
+    <div class="anuncios-card">
+      <span class="material-symbols-outlined anuncios-icon">menu_book_2</span>
+      <div class="anuncios-content">
+        <h3 class="anuncios-title">Suas receitas</h3>
+        <p class="anuncios-count"><span id="receitasAtivas">0</span> receitas ativas</p>
+      </div>
+    </div>
+    <!-- Div de informações de anúncios ativos -->
+  </div>
+    <div class="anuncios-info">
+    <div class="anuncios-card">
+      <span class="material-symbols-outlined anuncios-icon">health_metrics</span>
+      <div class="anuncios-content">
+        <h3 class="anuncios-title">Seus artigos</h3>
+        <p class="anuncios-count"><span id="artigosAtivos">0</span> artigos ativos</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-opcoes">
+    <a href="./cadastro.html" class="card-opcao">
+      <span class="material-symbols-outlined icone">add_circle</span>
+      <p class="texto">Criar receita</p>
+    </a>
+
+    <a href="./gerenciar.html" class="card-opcao">
+      <span class="material-symbols-outlined icone">menu_book_2</span>
+      <p class="texto">Gerenciar receitas</p>
+    </a>
+
+    <a href="./consultar.html" class="card-opcao">
+      <span class="material-symbols-outlined icone">add_circle</span>
+      <p class="texto">Criar artigo</p>
+    </a>
+
+    <a href="./futuras.html" class="card-opcao">
+      <span class="material-symbols-outlined icone">health_metrics</span>
+      <p class="texto">Gerenciar artigos</p>
+    </a>
+  </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+    
+    <!-- Firebase Config -->
+    <script src="js/firebase-config.js"></script>
+
+    <!-- Path to Framework7 Library Bundle JS-->
+    <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>
+    <!-- Roteamento do app-->
+    <!--<script type="text/javascript" src="js/routes.js"></script>-->
+
+    <!-- Painel JS -->
+    <script src="js/painel.js"></script>
+
+</body>
+</html>

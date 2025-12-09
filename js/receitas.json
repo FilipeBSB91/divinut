@@ -1,0 +1,488 @@
+{
+  "receitas": [
+    {
+      "id": 1,
+      "img": "img/receitas/01.png",
+      "nome": "Salada de Quinoa com Legumes Frescos",
+      "categoria": "Almoço",
+      "tempo_preparo": "20 minutos",
+      "serve": "2 pessoas",
+      "ingredientes": [
+        "1 xícara de quinoa cozida",
+        "1 pepino pequeno fatiado",
+        "6 tomates-cereja cortados ao meio",
+        "1 xícara de folhas de alface",
+        "1 xícara de rúcula",
+        "1 colher de sopa de azeite",
+        "Suco de 1/2 limão",
+        "Sal a gosto"
+      ],
+      "modo_preparo": [
+        "Lave bem a quinoa em água corrente para remover o sabor amargo.",
+        "Ferva 2 xícaras de água e adicione a quinoa.",
+        "Cozinhe em fogo baixo até a água ser absorvida.",
+        "Solte com um garfo e deixe esfriar.",
+        "Fatie o pepino e os tomates.",
+        "Misture quinoa e legumes em uma tigela.",
+        "Adicione as folhas verdes e tempere.",
+        "Misture delicadamente e sirva fresca."
+      ]
+    },
+    {
+      "id": 2,
+      "img": "img/receitas/02.png",
+      "nome": "Frango Grelhado com Batata-Doce e Brócolis",
+      "categoria": "Almoço",
+      "tempo_preparo": "35 minutos",
+      "serve": "1 pessoa",
+      "ingredientes": [
+        "2 filés de peito de frango",
+        "1 batata-doce média",
+        "1 xícara de brócolis em floretes",
+        "1 colher de sopa de azeite",
+        "Sal a gosto"
+      ],
+      "modo_preparo": [
+        "Tempere o frango com sal, azeite e pimenta.",
+        "Grelhe em fogo médio até dourar.",
+        "Corte a batata-doce e cozinhe no vapor.",
+        "Cozinhe o brócolis por 4 a 5 minutos.",
+        "Monte o prato e finalize com azeite."
+      ]
+    },
+    {
+      "id": 3,
+      "img": "img/receitas/03.png",
+      "nome": "Arroz Integral com Lentilhas",
+      "categoria": "Almoço",
+      "tempo_preparo": "40 minutos",
+      "serve": "2 pessoas",
+      "ingredientes": [
+        "1 xícara de arroz integral",
+        "1/2 xícara de lentilhas",
+        "1 cebola pequena picada",
+        "1 colher de chá de cúrcuma",
+        "1/2 colher de chá de sal"
+      ],
+      "modo_preparo": [
+        "Lave o arroz e as lentilhas.",
+        "Refogue a cebola no azeite.",
+        "Adicione o arroz e a cúrcuma.",
+        "Cozinhe com água quente.",
+        "Acrescente as lentilhas no meio do processo.",
+        "Finalize o cozimento e acerte o sal."
+      ]
+    },
+    {
+      "id": 4,
+      "img": "img/receitas/04.png",
+      "nome": "Panqueca Integral de Frango",
+      "categoria": "Almoço",
+      "tempo_preparo": "30 minutos",
+      "serve": "2 pessoas",
+      "ingredientes": [
+        "1 xícara de farinha integral",
+        "1 xícara de leite",
+        "1 ovo",
+        "1 xícara de frango desfiado",
+        "Sal a gosto"
+      ],
+      "modo_preparo": [
+        "Bata a massa no liquidificador.",
+        "Faça discos finos na frigideira.",
+        "Doure dos dois lados.",
+        "Recheie com frango temperado.",
+        "Enrole e leve ao forno por 10 minutos."
+      ]
+    },
+    {
+      "id": 5,
+      "img": "img/receitas/05.png",
+      "nome": "Macarrão Integral ao Pesto",
+      "categoria": "Almoço",
+      "tempo_preparo": "25 minutos",
+      "serve": "2 pessoas",
+      "ingredientes": [
+        "250 g de macarrão integral",
+        "1 xícara de folhas de manjericão",
+        "1/4 xícara de castanhas",
+        "3 colheres de sopa de azeite",
+        "8 tomates-cereja"
+      ],
+      "modo_preparo": [
+        "Cozinhe o macarrão até ficar al dente.",
+        "Bata manjericão, castanhas e azeite.",
+        "Misture o pesto ao macarrão.",
+        "Finalize com tomates-cereja."
+      ]
+    },
+    {
+      "id": 6,
+      "img": "img/receitas/06.png",
+      "nome": "Omelete Proteico com Espinafre",
+      "categoria": "Café da manhã",
+      "tempo_preparo": "8 minutos",
+      "serve": "1 pessoa",
+      "ingredientes": ["3 ovos", "1 xícara de espinafre", "Sal a gosto"],
+      "modo_preparo": [
+        "Bata os ovos com sal.",
+        "Refogue o espinafre rapidamente.",
+        "Adicione os ovos batidos.",
+        "Cozinhe até firmar e dobre."
+      ]
+    },
+    {
+      "id": 7,
+      "img": "img/receitas/07.png",
+      "nome": "Tapioca com Queijo e Orégano",
+      "categoria": "Café da manhã",
+      "tempo_preparo": "10 minutos",
+      "serve": "1 pessoa",
+      "ingredientes": [
+        "3 colheres de sopa de goma de tapioca",
+        "2 fatias de queijo",
+        "1/2 colher de chá de orégano"
+      ],
+      "modo_preparo": [
+        "Aqueça a frigideira.",
+        "Espalhe a goma peneirada.",
+        "Adicione queijo e orégano.",
+        "Dobre e sirva."
+      ]
+    },
+    {
+      "id": 8,
+      "img": "img/receitas/08.png",
+      "nome": "Iogurte com Granola e Mel",
+      "categoria": "Café da manhã",
+      "tempo_preparo": "2 minutos",
+      "serve": "1 pessoa",
+      "ingredientes": [
+        "170 g de iogurte",
+        "1/4 xícara de granola",
+        "1 colher de sopa de mel"
+      ],
+      "modo_preparo": [
+        "Coloque o iogurte na tigela.",
+        "Cubra com granola.",
+        "Regue com mel."
+      ]
+    },
+    {
+      "id": 9,
+      "img": "img/receitas/09.png",
+      "nome": "Overnight Oats com Chia",
+      "categoria": "Café da manhã",
+      "tempo_preparo": "5 minutos",
+      "serve": "1 pessoa",
+      "ingredientes": [
+        "3 colheres de sopa de aveia",
+        "1 colher de sopa de chia",
+        "150 ml de leite ou iogurte",
+        "1/2 xícara de frutas picadas"
+      ],
+      "modo_preparo": [
+        "Misture aveia, leite e chia.",
+        "Adicione frutas.",
+        "Leve à geladeira por pelo menos 6 horas."
+      ]
+    },
+    {
+      "id": 10,
+      "img": "img/receitas/10.png",
+      "nome": "Vitamina de Banana com Aveia",
+      "categoria": "Café da manhã",
+      "tempo_preparo": "3 minutos",
+      "serve": "1 pessoa",
+      "ingredientes": [
+        "1 banana",
+        "2 colheres de sopa de aveia",
+        "200 ml de leite"
+      ],
+      "modo_preparo": [
+        "Coloque tudo no liquidificador.",
+        "Bata até ficar cremoso.",
+        "Sirva imediatamente."
+      ]
+    },
+    {
+      "id": 11,
+      "img": "img/receitas/11.png",
+      "nome": "Suco Verde Detox",
+      "categoria": "Detox",
+      "tempo_preparo": "3 minutos",
+      "serve": "1 pessoa",
+      "ingredientes": [
+        "2 folhas de couve",
+        "Suco de 1 limão",
+        "1 maçã pequena",
+        "1 fatia fina de gengibre",
+        "200 ml de água"
+      ],
+      "modo_preparo": [
+        "Lave e pique a couve.",
+        "Corte a maçã.",
+        "Bata tudo no liquidificador.",
+        "Coe se desejar um suco leve."
+      ]
+    },
+    {
+      "id": 12,
+      "img": "img/receitas/12.png",
+      "nome": "Água Detox de Limão e Pepino",
+      "categoria": "Detox",
+      "tempo_preparo": "1 minuto",
+      "serve": "2 pessoas",
+      "ingredientes": [
+        "500 ml de água",
+        "3 fatias de limão",
+        "3 fatias de pepino"
+      ],
+      "modo_preparo": [
+        "Fatie o limão e o pepino.",
+        "Coloque em uma jarra com água.",
+        "Deixe gelar por 30 minutos."
+      ]
+    },
+    {
+      "id": 13,
+      "img": "img/receitas/13.png",
+      "nome": "Sopa Detox de Abobrinha",
+      "categoria": "Detox",
+      "tempo_preparo": "20 minutos",
+      "serve": "2 pessoas",
+      "ingredientes": [
+        "2 abobrinhas médias",
+        "1 colher de chá de gengibre ralado",
+        "1/2 colher de chá de sal"
+      ],
+      "modo_preparo": [
+        "Pique a abobrinha.",
+        "Refogue rapidamente.",
+        "Adicione água e gengibre.",
+        "Cozinhe até amolecer.",
+        "Bata até virar creme."
+      ]
+    },
+    {
+      "id": 14,
+      "img": "img/receitas/14.png",
+      "nome": "Suco Roxo Detox",
+      "categoria": "Detox",
+      "tempo_preparo": "3 minutos",
+      "serve": "1 pessoa",
+      "ingredientes": [
+        "1/2 beterraba pequena",
+        "Suco de 1/2 limão",
+        "200 ml de água"
+      ],
+      "modo_preparo": [
+        "Pique a beterraba.",
+        "Bata com água.",
+        "Finalize com limão."
+      ]
+    },
+    {
+      "id": 15,
+      "img": "img/receitas/15.png",
+      "nome": "Chá Detox de Gengibre e Limão",
+      "categoria": "Detox",
+      "tempo_preparo": "10 minutos",
+      "serve": "1 pessoa",
+      "ingredientes": [
+        "250 ml de água",
+        "3 fatias de gengibre",
+        "Suco de 1/2 limão"
+      ],
+      "modo_preparo": [
+        "Ferva água.",
+        "Adicione gengibre e deixe infusionar.",
+        "Misture limão e sirva quente."
+      ]
+    },
+    {
+      "id": 16,
+      "img": "img/receitas/16.png",
+      "nome": "Sopa Cremosa de Legumes",
+      "categoria": "Janta",
+      "tempo_preparo": "30 minutos",
+      "serve": "2 pessoas",
+      "ingredientes": [
+        "1 cenoura média",
+        "1 batata média",
+        "1/2 cebola"],
+      "modo_preparo": [
+        "Pique os legumes.",
+        "Refogue rapidamente.",
+        "Adicione água e cozinhe.",
+        "Bata até ficar cremoso.",
+        "Acerte o sal."
+      ]
+    },
+    {
+      "id": 17,
+      "img": "img/receitas/17.png",
+      "nome": "Peixe ao Forno com Ervas",
+      "categoria": "Janta",
+      "tempo_preparo": "25 minutos",
+      "serve": "2 pessoas",
+      "ingredientes": [
+        "2 filés de peixe branco",
+        "1 colher de sopa de azeite",
+        "1 colher de chá de ervas secas",
+        "Suco de 1/2 limão"
+      ],
+      "modo_preparo": [
+        "Tempere o peixe.",
+        "Coloque em uma assadeira.",
+        "Regue com azeite.",
+        "Asse até dourar."
+      ]
+    },
+    {
+      "id": 18,
+      "img": "img/receitas/18.png",
+      "nome": "Purê de Batata-Doce com Frango",
+      "categoria": "Janta",
+      "tempo_preparo": "35 minutos",
+      "serve": "1 pessoa",
+      "ingredientes": [
+        "2 batatas-doces médias",
+        "1 xícara de frango desfiado",
+        "1/2 colher de chá de sal"
+      ],
+      "modo_preparo": [
+        "Cozinhe e amasse a batata-doce.",
+        "Desfie o frango.",
+        "Misture ou sirva separado."
+      ]
+    },
+    {
+      "id": 19,
+      "img": "img/receitas/19.png",
+      "nome": "Omelete de Legumes",
+      "categoria": "Janta",
+      "tempo_preparo": "15 minutos",
+      "serve": "1 pessoa",
+      "ingredientes": [
+        "2 ovos",
+        "1/2 xícara de legumes picados",
+        "1/2 colher de chá de sal"
+      ],
+      "modo_preparo": [
+        "Pique os legumes.",
+        "Bata os ovos.",
+        "Misture tudo.",
+        "Cozinhe na frigideira."
+      ]
+    },
+    {
+      "id": 20,
+      "img": "img/receitas/20.png",
+      "nome": "Arroz com Brócolis e Alho",
+      "categoria": "Janta",
+      "tempo_preparo": "25 minutos",
+      "serve": "2 pessoas",
+      "ingredientes": [
+        "1 xícara de arroz",
+        "1 xícara de brócolis picado",
+        "2 dentes de alho",
+        "1/2 colher de chá de sal"
+      ],
+      "modo_preparo": [
+        "Cozinhe o arroz.",
+        "Refogue o alho.",
+        "Adicione o brócolis.",
+        "Misture ao arroz."
+      ]
+    },
+    {
+      "id": 21,
+      "img": "img/receitas/21.png",
+      "nome": "Sanduíche Natural",
+      "categoria": "Lanche",
+      "tempo_preparo": "5 minutos",
+      "serve": "1 pessoa",
+      "ingredientes": [
+        "2 fatias de pão integral",
+        "3 fatias de peito de peru",
+        "2 folhas de alface",
+        "2 rodelas de tomate"
+      ],
+      "modo_preparo": [
+        "Abra o pão.",
+        "Monte com alface, peru e tomate.",
+        "Sirva fresco."
+      ]
+    },
+    {
+      "id": 22,
+      "img": "img/receitas/22.png",
+      "nome": "Mix de Castanhas",
+      "categoria": "Lanche",
+      "tempo_preparo": "1 minuto",
+      "serve": "1 pessoa",
+      "ingredientes": ["1/2 xícara de castanhas variadas"],
+      "modo_preparo": [
+        "Misture todas as castanhas em um pote.",
+        "Armazene bem fechado."
+      ]
+    },
+    {
+      "id": 23,
+      "img": "img/receitas/23.png",
+      "nome": "Smoothie de Morango com Aveia",
+      "categoria": "Lanche",
+      "tempo_preparo": "3 minutos",
+      "serve": "1 pessoa",
+      "ingredientes": [
+        "6 morangos",
+        "200 ml de leite",
+        "1 colher de sopa de aveia"
+      ],
+      "modo_preparo": [
+        "Lave e corte os morangos.",
+        "Bata com leite e aveia.",
+        "Sirva gelado."
+      ]
+    },
+    {
+      "id": 24,
+      "img": "img/receitas/24.png",
+      "nome": "Bolo de Banana Fit",
+      "categoria": "Lanche",
+      "tempo_preparo": "40 minutos",
+      "serve": "2 pessoas",
+      "ingredientes": [
+        "3 bananass maduras",
+        "1 xícara de aveia",
+        "2 ovos",
+        "1 colher de chá de canela"
+      ],
+      "modo_preparo": [
+        "Amasse as bananas.",
+        "Misture com aveia, ovos e canela.",
+        "Asse em forno médio por 35–40 minutos."
+      ]
+    },
+    {
+      "id": 25,
+      "img": "img/receitas/25.png",
+      "nome": "Cookies de Aveia",
+      "categoria": "Lanche",
+      "tempo_preparo": "20 minutos",
+      "serve": "2 pessoas",
+      "ingredientes": [
+        "1 banana",
+        "1/2 xícara de aveia",
+        "1 colher de sopa de mel"
+      ],
+      "modo_preparo": [
+        "Amasse a banana.",
+        "Misture com aveia e mel.",
+        "Modele os cookies.",
+        "Asse até dourar."
+      ]
+    }
+  ]
+}

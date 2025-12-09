@@ -1,124 +1,54 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <!-- Required meta tags-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
-    <!-- Color theme for statusbar (Android only) -->
     <meta name="theme-color" content="#2196f3">
-    <!-- Your app title -->
-    <title>Template Tab</title>
-    <!-- Path to Framework7 Library Bundle CSS -->
+    <title>Detalhes da Receita</title>
     <link rel="stylesheet" href="lib/framework7-bundle.min.css">
-    <!-- CSS PERSONALIZADO PARA MENU-->
     <link rel="stylesheet" href="css/descricao.css">
-    <!--Ícones Material Design-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
 
-
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { padding: 20px; }
+        img { max-width: 100%; height: auto; border-radius: 10px; }
+        h2 { color: #333; margin-top: 20px; }
+        .info { background: #f5f5f5; padding: 15px; border-radius: 10px; margin: 15px 0; }
+    </style>
 </head>
-
 <body>
-    <!-- App root element -->
-    <div id="app">
 
-        <!-- Your main view, should have "view-main" class -->
-        <div class="view view-main">
 
-            <!-- Initial Page, "data-name" contains page name -->
-            <div data-name="descricao" class="page color-theme-blue">
-
-                              <!-- Top Navbar -->
-<div class="navbar">
-    <div class="navbar-inner">
-        <div class="left">
-            <a href="/index/" class="link">
-                <span class="material-symbols-outlined">arrow_circle_left</span>
-            </a>
+    <div class="container">
+        <h1 id="nome-receita">Carregando...</h1>
+        <img id="imagem-receita" src="" alt="">
+        
+        <div class="info">
+            <p><strong>Categoria:</strong> <span id="categoria-receita">-</span></p>
+            <p><strong>Tempo:</strong> <span id="tempo-receita">-</span></p>
+            <p><strong>Serve:</strong> <span id="serve-receita">-</span></p>
         </div>
-        <div class="title">Descrição</div>
-    </div>
-</div>
-   
-
-
-
-
-                <!-- Scrollable page content -->
-<div class="page-content">
-  <div class="block">
-
-
-    <!-- Imagem da receita -->
-    <img src="img/1762880823908.jpg" alt="Salada de Verão com Quinoa" class="imagem-receita">
-
-    <!-- Nome e descrição -->
-    <h3 class="titulo">Salada de Quinoa com Legumes Frescos</h3>
-    <p class="texto">
-      Uma salada refrescante e nutritiva, perfeita para os dias quentes. Rica em proteínas e vitaminas, ideal para um almoço leve ou jantar.
-    </p>
-
-    <!-- Informações -->
-    <div class="info">
-      <div>
-        <p class="info-label">Tempo de Preparo</p>
-        <p class="info-valor">20 minutos</p>
-      </div>
-      <div>
-        <p class="info-label">Serve</p>
-        <p class="info-valor">2 pessoas</p>
-      </div>
+        
+        <h2>Ingredientes</h2>
+        <ul id="ingredientes-lista">
+            <li>Carregando...</li>
+        </ul>
+        
+        
+        <h2>Modo de Preparo</h2>
+        <ol id="modo-preparo-lista">
+            <li>Carregando...</li>
+        </ol>
+        
+        <a href="index.html" style="display: inline-block; margin-top: 20px; padding: 10px 20px; background: #4c9a4c; color: white; text-decoration: none; border-radius: 5px;">
+            ← Voltar
+        </a>
     </div>
 
-    <!-- Ingredientes -->
-    <h4 class="subtitulo">Ingredientes</h4>
-    <ul class="ingredientes-lista">
-      <li>
-        <label>
-          <input type="checkbox">
-          1 xícara de quinoa cozida
-        </label>
-      </li>
-      <li>
-        <label>
-          <input type="checkbox">
-          1 pepino fatiado
-        </label>
-      </li>
-      <li>
-        <label>
-          <input type="checkbox">
-          6 tomates-cereja cortados ao meio
-        </label>
-      </li>
-      <li>
-        <label>
-          <input type="checkbox">
-          Folhas de alface e rúcula a gosto
-        </label>
-      </li>
-      <li>
-        <label>
-          <input type="checkbox">
-          Azeite, limão e sal para temperar
-        </label>
-      </li>
-    </ul>
 
-  </div>
-</div>
-            </div>
-        </div>
-    </div>
     <script src="js/descricao.js"></script>
-    <!-- Path to Framework7 Library Bundle JS-->
     <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
-	<!-- jQuery -->
-	<script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>	
-    <!-- Roteamento do app-->
-    <script type="text/javascript" src="js/routes.js"></script>
-    <script src="js/descricao.js"></script>
 </body>
-
 </html>

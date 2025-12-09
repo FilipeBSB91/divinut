@@ -217,3 +217,16 @@ h2 {
   font-weight: 600;
 }
 
+
+.page-content {
+    padding-top: 56px; 
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: white;
+}

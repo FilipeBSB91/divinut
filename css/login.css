@@ -1,8 +1,148 @@
-.body{
-    background: url(../img/bg.jpg);
-    background-size: cover;
+/* login.css - ESTILOS SIMPLIFICADOS */
+.login-content {
+    background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
 }
 
-.block{
-    color: antiquewhite;
+.login-form {
+    background: white;
+    border-radius: 16px;
+    padding: 30px 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-form h2 {
+    color: #2e7d32;
+    margin: 0 0 10px 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.login-subtitle {
+    color: #666;
+    margin: 0 0 30px 0;
+    font-size: 14px;
+}
+
+.login-buttons {
+    margin: 30px 0;
+}
+
+.google-login-button {
+    width: 100%;
+    background: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s;
+    box-shadow: 0 2px 8px rgba(66, 133, 244, 0.3);
+}
+
+.google-login-button:hover {
+    background: #3367d6;
+}
+
+.google-button-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.access-info {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 20px;
+    border-left: 4px solid #4caf50;
+}
+
+.access-info p {
+    margin: 0;
+    font-size: 13px;
+    color: #666;
+    line-height: 1.4;
+}
+
+.access-info strong {
+    color: #2e7d32;
+}
+
+/* Loading simples */
+.google-login-button.loading {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.google-login-button.loading .google-button-content span {
+    display: none;
+}
+
+.google-login-button.loading .google-button-content::after {
+    content: "Conectando...";
+}
+
+/* ========== MODO CONTRASTE PARA LOGIN ========== */
+body.modo-contraste .login-content {
+    background: #000000 !important;
+}
+
+body.modo-contraste .login-form {
+    background: #000000 !important;
+    border: 2px solid #ffff00 !important;
+    box-shadow: 0 10px 30px rgba(255, 255, 0, 0.3) !important;
+}
+
+body.modo-contraste .login-form h2 {
+    color: #ffff00 !important;
+}
+
+body.modo-contraste .login-subtitle {
+    color: #ffff00 !important;
+}
+
+body.modo-contraste .google-login-button {
+    background: #ffff00 !important;
+    color: #000000 !important;
+    border: 2px solid #ffff00 !important;
+    box-shadow: 0 2px 8px rgba(255, 255, 0, 0.5) !important;
+}
+
+
+body.modo-contraste .google-login-button:hover {
+    background: #000000 !important;
+    color: #ffff00 !important;
+}
+
+body.modo-contraste .access-info {
+    background: #000000 !important;
+    border-left: 4px solid #ffff00 !important;
+}
+
+body.modo-contraste .access-info p {
+    color: #ffff00 !important;
+}
+
+body.modo-contraste .access-info strong {
+    color: #ffff00 !important;
+}
+
+/* SVG do Google no modo contraste */
+body.modo-contraste .google-login-button svg {
+    filter: brightness(0) !important;
+}
+
+body.modo-contraste .google-login-button:hover svg {
+    filter: brightness(0) invert(1) !important;
 }

@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.painel-page {
+  background-color: #ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  font-family: "Roboto","Roboto Condensed", sans-serif;
+  flex-direction: column;
+  min-height: calc(100vh 1px);
+}
+
+/* Grade principal dos cards */
+.grid-opcoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Card - Estilo unificado com index.css */
+.card-opcao {
+  background-color: #fff;
+  border-radius: 15px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 40px 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 140px;
+  cursor: pointer; /* Adiciona cursor de clique */
+}
+
+.card-opcao:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* Ícone - Estilo unificado */
+.icone {
+  font-size: 48px;
+  color: #19c463;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.card-opcao:hover .icone {
+  transform: scale(1.1);
+}
+
+/* Texto - Estilo unificado */
+.texto {
+  font-weight: 700;
+  color: #000000;
+  font-size: 16px;
+  margin: 0;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Efeito de card ativo */
+.card-opcao:active {
+  background-color: #f8f8f8;
+  transform: translateY(-1px);
+}
+
+/* ======== Seção de Anúncios Ativos ======== */
+.anuncios-info {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 30px;
+}
+
+.anuncios-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: all 0.3s ease;
+}
+
+.anuncios-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.anuncios-icon {
+  font-size: 40px;
+  color: #19c463;
+  background: #f1f1f1;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.anuncios-content {
+  flex: 1;
+}
+
+.anuncios-title {
+  color: #000000;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0 0 5px 0;
+}
+
+.anuncios-count {
+  color: #666;
+  font-size: 14px;
+  margin: 0;
+}
+
+#anunciosAtivos {
+  color: #19c463;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.skeleton-effect-wave {
+  animation: skeleton-wave 1.5s ease-in-out infinite;
+}
+
+@keyframes skeleton-wave {
+  0% { opacity: 0.6; }
+  50% { opacity: 0.8; }
+  100% { opacity: 0.6; }
+}
+
+/* Responsivo */
+@media (min-width: 768px) {
+  .grid-opcoes {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 600px;
+    gap: 25px;
+  }
+  
+  .anuncios-info {
+    max-width: 600px;
+  }
+  
+  .anuncios-card {
+    padding: 25px;
+  }
+  
+  .card-opcao {
+    height: 160px;
+    padding: 50px 25px;
+  }
+  
+  .texto {
+    font-size: 18px;
+  }
+}
+
+/* Para telas maiores */
+@media (min-width: 992px) {
+  .grid-opcoes {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 800px;
+  }
+  
+  .anuncios-info {
+    max-width: 800px;
+  }
+}
+
+/* Ajustes para mobile muito pequeno - CORRIGIDO */
+@media (max-width: 480px) {
+  .painel-page {
+    padding: 20px 15px;
+  }
+  
+  .grid-opcoes {
+    gap: 15px;
+  }
+  
+  .anuncios-info {
+    margin-bottom: 20px;
+  }
+  
+  .anuncios-card {
+    padding: 15px;
+    gap: 12px;
+  }
+  
+  .anuncios-icon {
+    font-size: 32px;
+    padding: 8px;
+  }
+  
+  .anuncios-title {
+    font-size: 16px;
+  }
+  
+  .anuncios-count {
+    font-size: 13px;
+  }
+  
+  .card-opcao {
+    height: 120px;
+    padding: 30px 15px;
+    /* REMOVIDO: pointer-events: none; */
+  }
+  
+  .icone {
+    font-size: 42px;
+    margin-bottom: 12px;
+  }
+  
+  .texto {
+    font-size: 14px;
+  }
+}

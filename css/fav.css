@@ -1,99 +1,192 @@
+/* fav.css - VERSÃO SIMPLIFICADA E FUNCIONAL */
+
 /* Título principal */
 h2 {
-  text-align: center;
-  font-weight: 600;
-  color: #1c1c1c;
-  margin: 20px 0;
+    text-align: center;
+    font-weight: 600;
+    color: #1c1c1c;
+    margin: 20px 0 30px 0;
+    font-size: 22px;
 }
 
 /* Lista de favoritos */
+.favoritos-list {
+    padding: 10px;
+}
+
 .favoritos-list ul {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
-/* Cada card */
+/* Card de favorito */
 .favorito-card {
-  background: #ffffff;
-  border-radius: 16px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-  margin-bottom: 15px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  padding: 10px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 16px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 1px solid #eee;
 }
 
-/* Imagem */
-.favorito-img {
-  width: 148px;
-  height: 148px;
-  border-radius: 12px;
-  object-fit: cover;
+.favorito-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
 
-/* Conteúdo de texto */
+/* Item media (imagem) */
+.item-media {
+    flex-shrink: 0;
+}
+
+.item-media img {
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Item inner (conteúdo) */
 .item-inner {
-  margin-left: 12px;
-  flex: 1;
+    margin-left: 15px;
+    flex: 1;
+    min-width: 0;
+    padding: 5px 0;
 }
 
-/* Cabeçalho do item (tempo + botão) */
+/* Cabeçalho do item */
 .item-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
 }
 
 /* Tempo de preparo */
 .tempo {
-  color: #3f7f3f;
-  font-size: 14px;
-  font-weight: 500;
+    color: #3f7f3f;
+    font-size: 13px;
+    font-weight: 500;
+    background: #f0f7f0;
+    padding: 4px 10px;
+    border-radius: 12px;
+    display: inline-block;
 }
 
 /* Botão de favorito */
 .btn-favorito {
-  background: none;
-  border: none;
-  padding: 5px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  transition: all 0.3s ease;
+    background: none;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
 }
 
-.btn-favorito .material-symbols-outlined {
-  font-size: 24px;
-  color: #ff4444; /* Vermelho para indicar favoritado */
-  font-variation-settings: 'FILL' 1;
-  transition: all 0.3s ease;
+.btn-favorito .material-symbols-outlined.favorited {
+    font-size: 22px;
+    color: #ff4444;
+    font-variation-settings: 'FILL' 1;
+    transition: all 0.3s ease;
 }
 
 .btn-favorito:hover {
-  background-color: rgba(255, 68, 68, 0.1);
+    background-color: rgba(255, 68, 68, 0.1);
 }
 
-.btn-favorito:hover .material-symbols-outlined {
-  transform: scale(1.1);
+.btn-favorito:hover .material-symbols-outlined.favorited {
+    transform: scale(1.1);
 }
 
 /* Título da receita */
 .titulo {
-  font-weight: 600;
-  font-size: 16px;
-  color: #000;
-  margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #1c1c1c;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-/* Descrição da receita */
+/* Categoria */
+.categoria {
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+/* Descrição */
 .descricao {
-  font-size: 14px;
-  color: #555;
-  line-height: 1.4em;
+    font-size: 13px;
+    color: #777;
+    line-height: 1.4em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Mensagens de estado */
+.text-align-center {
+    text-align: center;
+}
+
+.padding-top {
+    padding-top: 40px;
+}
+
+.padding-bottom {
+    padding-bottom: 40px;
+}
+
+/* Botões da Framework7 */
+.button.button-fill {
+    border-radius: 8px;
+    font-weight: 500;
+    padding: 12px 24px;
+    margin-top: 10px;
+}
+
+.color-green {
+    background-color: #4c9a4c;
+    color: white;
+}
+
+.color-red {
+    background-color: #ff4444;
+    color: white;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .item-media img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .titulo {
+        font-size: 15px;
+    }
+    
+    .descricao {
+        font-size: 12px;
+    }
+    
+    .favorito-card {
+        padding: 12px;
+    }
 }

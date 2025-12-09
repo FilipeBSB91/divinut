@@ -1,4 +1,4 @@
-// Função para abrir URL em nova aba/guia
+
 function openInNewTab(url) {
     window.open(url, '_blank', 'noopener,noreferrer');
 }

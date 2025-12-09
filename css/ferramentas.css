@@ -105,3 +105,54 @@ h2 {
         font-size: 14px;
     }
 }
+
+/* Estilos para artigos carregados */
+.loading {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+    font-size: 16px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.error {
+    color: #f44336;
+}
+
+.artigo-data {
+    display: block;
+    color: #666;
+    font-size: 14px;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* Ajustes para imagem padrão */
+.artigo-imagem[src="img/default-article.jpg"] {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Melhorar responsividade */
+@media (max-width: 768px) {
+    .artigo-card {
+        margin: 10px;
+    }
+    
+    .artigo-imagem {
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .artigo-imagem {
+        height: 150px;
+    }
+    
+    .artigo-titulo {
+        font-size: 18px;
+    }
+}
